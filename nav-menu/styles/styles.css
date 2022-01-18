@@ -1,0 +1,21 @@
+* {
+
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation Menu */
+
+    #navmenu {
+
+        width: 100%;
+        background-color: black;
+    }
+
+    li {
+
+        display: inline;
+    }
+
+    
+
