@@ -9,13 +9,32 @@
     #navmenu {
 
         width: 100%;
-        background-color: black;
+        background-color: #D20440;
+    }
+
+    li img {
+    
+        border: 2px solid;
+    }
+
+    li a {
+
+        border: 2px solid;
     }
 
     li {
 
-        display: inline;
+        display: inline-block;
+        padding: 10px;
+        width: 15%;
+        border: 2px solid;
     }
 
+    img {
+
+        width: 150px;
+        height: 75px;
+        margin: 0px 30px;
+    }
     
 
