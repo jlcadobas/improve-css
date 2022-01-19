@@ -1,10 +1,12 @@
+/* Universal Selector */
+
 * {
 
     padding: 0;
     margin: 0;
 }
 
-/* Navigation Menu */
+    /* Navigation Menu */
 
     #navmenu {
 
@@ -12,29 +14,40 @@
         background-color: #D20440;
     }
 
-    li img {
-    
-        border: 2px solid;
-    }
-
-    li a {
-
-        border: 2px solid;
-    }
-
     li {
 
         display: inline-block;
         padding: 10px;
-        width: 15%;
-        border: 2px solid;
+        width: 10%;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    li:first-of-type {
+
+        margin: 0 100px;
+    }
+
+    a {
+
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover{
+
+        color: black;
+    }
+
+    .active {
+
+        color: black;
     }
 
     img {
 
         width: 150px;
         height: 75px;
-        margin: 0px 30px;
     }
-    
+
 
