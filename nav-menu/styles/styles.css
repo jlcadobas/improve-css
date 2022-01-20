@@ -17,14 +17,15 @@
     li {
 
         display: inline-block;
-        padding: 10px;
-        width: 10%;
+        padding: 10px; /* This padding might be optional.*/
+        width: 10%;    /* Using other units could be a better option. */
         text-align: center;
         vertical-align: middle;
     }
 
     li:first-of-type {
 
+        /* Add margin-right to the first li element with the img inside. */
         margin: 0 100px;
     }
 
@@ -34,12 +35,7 @@
         text-decoration: none;
     }
 
-    a:hover{
-
-        color: black;
-    }
-
-    .active {
+    a:hover, .active{
 
         color: black;
     }
@@ -48,6 +44,26 @@
 
         width: 150px;
         height: 75px;
+    }
+
+    /* Subnavigation Menu */
+
+
+
+    .submenu-content {
+
+        display: none;
+        position: absolute;
+        background-color: #D20440;
+        left: -80px;
+        color: black;
+        width: 100%;
+        z-index: 1;
+    }
+
+    a.submenu:hover .submenu-content {
+
+        visibility: visible;
     }
 
 
