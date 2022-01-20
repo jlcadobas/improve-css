@@ -48,22 +48,41 @@
 
     /* Subnavigation Menu */
 
+    li div {
 
+        float: left;
+        overflow: hidden;
+    }
 
     .submenu-content {
 
         display: none;
         position: absolute;
         background-color: #D20440;
-        left: -80px;
-        color: black;
-        width: 100%;
+        min-width: 160px;
         z-index: 1;
+        margin-left: -10px;
+        margin-top: 10px;
     }
 
-    a.submenu:hover .submenu-content {
+    .submenu-content a {
 
-        visibility: visible;
+        float: none;
+        color: black;
+        padding: 20px 25px;
+        display: block;
+    }
+
+    .submenu-content a:hover {
+
+        background-color: aliceblue;
+    }
+
+    /* Target the right element that you need to be hovered on: the third li element. */
+
+    li:nth-of-type(3):hover .submenu-content {
+
+        display: block;
     }
 
 
