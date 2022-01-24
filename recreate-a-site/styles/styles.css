@@ -4,3 +4,55 @@
     padding: 0;
 }
 
+    /* Navigation Menu */
+
+    ul {
+
+        padding: 40px;
+        height: 10vh;
+    }
+
+    li {
+
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .logo {
+
+        padding: 0;
+        margin-right: 30px;
+    }
+
+    a {
+
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover, a:active {
+
+        color: white;
+    }
+
+    /* Two section */
+
+    .section {
+
+        float: left;
+    }
+
+    div:nth-child(1) {
+
+        width: 60%;
+        background-color: antiquewhite;
+        height: 100vh;
+    }
+
+    div:nth-child(2) {
+
+        width: 40%;
+        background-color: yellowgreen;
+        height: 100vh;
+    }
