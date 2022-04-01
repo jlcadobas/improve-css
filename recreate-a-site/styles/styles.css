@@ -75,7 +75,7 @@
 
     .background {
 
-        background-image: url("/recreate-a-site/images/shoes.jpg");
+        background-image: url("../images/shoes.jpg");
         width: 60%;
         height: 100vh;
         background-position: center center;
