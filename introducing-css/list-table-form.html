@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Playing with Lists, Tables and Forms </title>
+
+        <link href="list-table-form.css" type="text/css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- The html and css came from Jon Duckett's HTML and CSS Book.
+            Some alterations are only done to test the css properties. 
+        -->
+    </head>
+    <body>
+        <h1>Quotes from Edgar Allan Poe</h1>
+        
+        <ul>
+            <li> I have great faith in fools; self-confidence
+            my friends call it.</li>
+            <li>All that we see or seem is but a dream within
+            a dream.</li>
+            <li>I would define, in brief, the poetry of words
+            as the rhythmical creation of Beauty.</li>
+        </ul>
+
+        <h1>First Edition Auctions</h1>
+        <table>
+            <tr>
+                <th>Author</th>
+                <th>Title</th>
+                <th class="money">Reserve Price</th>
+                <th class="money">Current Bid</th>
+            </tr>
+            <tr>
+                <td>E.E. Cummings</td>
+                <td>Tulips & Chimneys</td>
+                <td class="money">$2,000.00</td>
+                <td class="money">$2,642.50</td>
+            </tr>
+            <tr class="even">
+                <td>Charles d'Orleans</td>
+                <td>Poemes</td>
+                <td class="money"></td>
+                <td class="money">$5,866.00</td>
+            </tr>
+            <tr>
+                <td>T.S. Eliot</td>
+                <td>Poems 1909 - 1925</td>
+                <td class="money">$1,250.00</td>
+                <td class="money">$8,499.35</td>
+            </tr>
+            <tr class="even">
+                <td>Sylvia Plath</td>
+                <td>The Colossus</td>
+                <td class="money"></td>
+                <td class="money">$1031.72</td>
+            </tr>
+        </table>
+
+        <form action="example.php" method="post">
+            <div>
+                <label for="name" class="title">Name:</label>
+                    <input type="text" id="name" name="name" />
+            </div>
+            
+            <div>
+                <label for="email" class="title">Email:</label>
+                    <input type="email" id="email" name="email" />
+            </div>
+
+            <div class="radio-buttons">
+                <span class="title">Gender:</span>
+                    <input type="radio" name="gender" id="male" value="M" />
+                <label for="male">M</label>
+                    <input type="radio" name="gender" id="female" value="F" />
+                <label for="female">F</label><br />
+            </div>
+
+            <div class="submit">
+                <input type="submit" value="Register"
+                id="submit" />
+            </div>
+        </form>
+
+        <h1>Poetry Workshops</h1>
+            <p>We will be conducting a number of poetry workshops
+            and symposiums throughout the year.</p>
+            <p>Please note that the following events are free to
+            members:</p>
+
+        <ul>
+            <li>A Poetic Perspective</li>
+            <li>Walt Whitman at War</li>
+            <li>Found Poems and Outsider Poetry</li>
+        </ul>
+
+        <table>
+            <tr class="head">
+                <th></th>
+                <th>New York</th>
+                <th>Chicago</th>
+                <th>San Francisco</th>
+            </tr>
+
+            <tr>
+                <th>A Poetic Perspective</th>
+                <td>Sat, 4 Feb 2012<br />11am - 2pm</td>
+                <td>Sat, 3 Mar 2012<br />11am - 2pm</td>
+                <td>Sat, 17 Mar 2012<br />11am - 2pm</td>
+            </tr>
+
+            <tr class="even">
+                <th>Walt Whitman at War</th>
+                LISTS, TABLES AND FORMS 354
+                Example
+                LISTS, TABLES FORMS
+                <td>Sat, 7 Apr 2012<br />11am - 1pm</td>
+                <td>Sat, 5 May 2012<br />11am - 1pm</td>
+                <td>Sat, 19 May 2012<br />11am - 1pm</td>
+            </tr>
+                
+            <tr>
+                <th>Found Poems &amp; Outsider Poetry</th>
+                <td>Sat, 9 Jun 2012<br />11am - 2pm</td>
+                <td>Sat, 7 Jul 2012<br />11am - 2pm</td>
+                <td>Sat, 21 Jul 2012<br />11am - 2pm</td>
+            </tr>
+
+            <tr class="even">
+                <th>Natural Death: An Exploration</th>
+                <td>Sat, 4 Aug 2012<br />11am - 4pm</td>
+                <td>Sat, 8 Sep 2012<br />11am - 4pm</td>
+                <td>Sat, 15 Sep 2012<br />11am - 4pm</td>
+            </tr>
+        </table>
+        
+        <form action="http://www.example.com/form.php" method="get">
+            <fieldset>
+                <legend>Register your interest</legend>
+                    <p><label class="title" for="name">Your name:</label>
+                        <input type="text" name="name" id="name"><br />
+                    <label class="title" for="email">Your email:</label>
+                        <input type="text" name="email" id="email"></p>
+                    <p>
+                        <label for="location" class="title">Your closest center:</label>
+                            <select name="location" id="location">
+                                <option value="ny">New York</option>
+                                <option value="il">Chicago</option>
+                                <option value="ca">San Francisco</option>
+                            </select>
+                    </p>
+                <span class="title">Are you a member?</span>
+                    <label><input type="radio" name="member" value="yes" /> Yes</label>
+                    <label><input type="radio" name="member" value="no" /> No</label>
+            </fieldset>
+
+            <div class="submit"><input type="submit" value="Register" /></div>
+        </form>
+    </body>
+</html>
