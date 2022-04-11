@@ -5,6 +5,8 @@
         font-size: 90%;
         color: #666666;
         background-color: #f8f8f8;
+        display: block;
+        margin: 0 auto;
     }
     
     li {
