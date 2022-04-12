@@ -1,0 +1,14 @@
+
+    * {
+
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+
+        color: yellowgreen;
+        background-image: url("image1.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
